@@ -1,5 +1,8 @@
+MikanOSをCLANG-11開発環境でビルド・実行した記録
+                                                           作成: 2021-06-21
+                                                           更新: 2021-06-21
 
-テキストによるとMikanosの標準開発環境は Ubuntu 18.04(CLANG-7,QEMU-4.2.1) と
+テキストによるとMikanOSの標準開発環境は Ubuntu 18.04(CLANG-7,QEMU-4.2.1) と
 されている。
 
 Dockerコンテナとして配布されている開発環境 ghcr.io/sarisia/mikanos は以下の
@@ -11,21 +14,21 @@ Dockerコンテナとして配布されている開発環境 ghcr.io/sarisia/mik
   lld-7              1:7.0.1-12
   qemu-system-x86    1:4.2-3ubuntu6.16
 
-ここでは KALI-Rolling と Fedora 33 を使ってMikanosをビルドし、動作確認する。
+ここでは KALI-Rolling と Fedora 33 を使ってMikanOSをビルドし、動作確認する。
 
 [KALI-Rolling]
   kali-desktop-base  2021.2.4
   clang-11           1:11.0.1-2
   llvm-11-dev        1:11.0.1-2
   lld-11             1:11.0.1-2
-  lldb-11            1:11.0.1-2
-  qemu-system-x86    1:5.2+dfsg-10
+  qemu-system-x86    1:5.2+dfsg-10+b2
 
 [Fedora 33]
   fedora-release-33-4.noarch
   clang-devel-11.0.0-3.fc33.x86_64
   llvm-libs-11.0.0-1.fc33.x86_64
   lld-11.0.0-1.fc33.x86_64
-  lldb-11.0.0-1.fc33.x86_64
   qemu-system-x86-core-5.1.0-9.fc33.x86_64
+
+                                                                      以上
 
